@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+body{
+  background-image: url(../component/img/bggg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.App { 
+  text-align: center;
+}
+
+
+.title{
+  font-size: 62px;
+  font-weight: 540;
+  color: #fff;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px rgb(0, 255, 251),
+  0 0 42px rgb(68, 0, 186),
+  0 0 82px #0fa,
+  0 0 92px rgb(184, 0, 110),
+  0 0 102px rgb(163, 163, 163),
+  0 0 151px #0fa
+}
+
+.para{
+  font-size: calc(9px + 2vh);
+  line-height: calc(6px + 2vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "Sacramento";
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+.search-box{
+  display: block;
+  margin: 60px auto 20px;
+  width: 40%;
+  height: 32px;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 6px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(105, 105, 144) 35%, rgb(206, 117, 212) 100%);
+  animation: infinite;
+}
+
+.search-btn{
+  padding: 10px 30px;
+  border-radius: 40px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-family: "Sacramento";
+  font-size: 20px;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 144) 35%, rgb(5, 168, 133) 100%);
+  color: #fff;
+
+}
+
+/* changing the placeholder color for every browser */
+
+
+.search-box::-webkit-input-placeholder { /* Edge */
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-align: center;
+}
+
+.search-box:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-align: center;
+}
+
+.search-box::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-align: center;
+}
+
+.gallery{
+  padding-top: 2%;
+  display: contents;
+  flex-wrap: wrap;
+}
+
+.item{
+  width: 18%;
+  margin: 5px;
+}
+.App{
+@media (max-width:499px) {
+  font-size: 14rem;
+}
+@media (min-width:500px) {
+  font-size: 16rem;
+}
+@media (min-width:1001px) {
+  font-size: 18rem;
+}
+}
